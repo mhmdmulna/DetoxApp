@@ -348,3 +348,83 @@ body.dark-mode .button-secondary:hover {
     text-decoration: line-through;
     color: var(--text-secondary-light);
 }
+
+/* Tambahan Media Query untuk Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+
+  .app-container {
+    padding: 30px 16px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  #timerDisplay {
+    font-size: 3.5rem;
+  }
+
+  .timer-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .set-timer input,
+  .set-timer input[type="number"] {
+    width: 80px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .add-challenge {
+    flex-direction: column;
+  }
+
+  .add-challenge .button-primary {
+    width: 100%;
+  }
+
+  #newChallengeInput {
+    width: 100%;
+  }
+
+  #challengeList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .challenge-item-actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .challenge-item-actions button {
+    width: 32px;
+    height: 32px;
+  }
+}
