@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fokus & Detox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="header-content">
+                <h1>Fokus & Detox</h1>
+                <p>Temukan kembali keseimbangan dalam hidup digitalmu.</p>
+            </div>
+            <button id="darkModeToggle" class="theme-toggle">
+                <i class="fa-solid fa-moon icon-moon"></i>
+                <i class="fa-solid fa-sun icon-sun"></i>
+            </button>
+        </header>
+
+        <main>
+            <section id="focus-mode">
+                <div class="card focus-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-stopwatch-20 card-icon"></i>
+                        <h3>Mode Fokus</h3>
+                    </div>
+                    <div id="timerDisplay">25:00</div>
+                    <div class="set-timer">
+                        <label for="focusDuration">Atur Waktu (menit):</label>
+                        <input type="number" id="focusDuration" min="1" max="180" value="25">
+                    </div>
+
+                    <div class="timer-controls">
+                        <button id="startFocusBtn" class="button button-primary"><i class="fas fa-play"></i> Mulai</button>
+                        <button id="resetFocusBtn" class="button button-secondary"><i class="fas fa-undo"></i> Reset</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="challenges">
+                <div class="card challenge-card">
+                     <div class="card-header">
+                        <i class="fa-solid fa-trophy card-icon"></i>
+                        <h3>Tantangan Detox</h3>
+                    </div>
+                    <div class="add-challenge">
+                        <input type="text" id="newChallengeInput" placeholder="Tulis tantangan baru...">
+                        <button id="addChallengeBtn" class="button button-primary"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <ul id="challengeList">
+                        </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
