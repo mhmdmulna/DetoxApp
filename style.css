@@ -181,7 +181,6 @@ body.dark-mode .theme-toggle .icon-moon { display: none; }
   box-shadow: 0 0 0 2px rgba(76, 111, 255, 0.2);
 }
 
-
 /* REVISED BUTTONS */
 .button {
     border: none;
@@ -426,5 +425,23 @@ body.dark-mode .button-secondary:hover {
   .challenge-item-actions button {
     width: 32px;
     height: 32px;
+  }
+
+  /* Additional styles for better mobile experience */
+  .card {
+    margin-bottom: 20px; /* Reduce margin for mobile */
+  }
+
+  .set-timer {
+    margin-bottom: 15px; /* Reduce margin for mobile */
+  }
+
+  .button {
+    padding: 10px; /* Adjust padding for mobile */
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+
+  header h1 {
+    text-align: center; /* Center align header for mobile */
   }
 }
