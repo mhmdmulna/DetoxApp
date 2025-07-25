@@ -272,6 +272,7 @@ body.dark-mode .button-secondary:hover {
     padding: 14px 4px;
     border-bottom: 1px solid var(--border-light);
     transition: all 0.3s ease;
+    gap: 12px;
 }
 
 #challengeList li:last-child {
@@ -281,6 +282,7 @@ body.dark-mode .button-secondary:hover {
 .challenge-item {
     display: flex;
     align-items: center;
+    flex-grow: 1;
     gap: 12px;
 }
 
@@ -412,14 +414,12 @@ body.dark-mode .button-secondary:hover {
   }
 
   #challengeList li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .challenge-item-actions {
-    display: flex;
-    gap: 8px;
+    margin-left: auto;
   }
 
   .challenge-item-actions button {
